@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="| 제한시간 |"
+            android:textSize="@dimen/setting_screen_title_textSize">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Player 1 :"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to9"
+                android:id="@+id/p1_hour"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to59"
+                android:id="@+id/p1_min"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="분"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to59"
+                android:id="@+id/p1_sec"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="초"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:text="Player 1 :"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to9"
+                android:id="@+id/p2_hour"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to59"
+                android:id="@+id/p2_min"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="분"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to59"
+                android:id="@+id/p2_sec"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="초"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/dotted_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/setting_screen_cho_reading"
+                android:id="@+id/cho_read_checkbox"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to60"
+                android:id="@+id/cho_read_sec"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="초"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_1to10"
+                android:id="@+id/cho_read_times"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="회"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="138dp"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:text="@string/setting_screen_fischer"
+                android:id="@+id/fischer_checkbox"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/setting_screen_textSize"
+                android:hint="@string/setting_screen_hint_0to60"
+                android:id="@+id/fischer_sec"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="초"
+                android:textSize="@dimen/setting_screen_textSize">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/applyButton"
+                android:text="적용"></Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton"
+                android:text="취소"></Button>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

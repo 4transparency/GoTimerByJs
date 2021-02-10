@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_timer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background_black"
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toTopOf="@+id/setButton_screen"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/player1_screen"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:rotation="180"
+            android:layout_marginEnd="10dp"
+            android:background="@color/background_gray91">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/player_cho_read"
+                android:textSize="@dimen/plyer_screen_textSize"
+                android:id="@+id/p1_cho_read"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="2"
+                android:layout_margin="10dp"
+                android:gravity="top|center_horizontal"
+                android:text="0:10:00"
+                android:textSize="@dimen/plyer_screen_timerSize"
+                android:id="@+id/p1_timer"/>
+        </LinearLayout>
+
+
+
+
+        <com.gnuda.gotimerbyjs.VerticalTextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/total_time"
+            android:layout_weight="1"
+
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:paddingLeft="20dp"
+
+            android:text="@string/total_time_went"
+            android:textSize="@dimen/side_text_size"
+            android:textAllCaps="true"
+            android:background="@color/white">
+
+
+
+        </com.gnuda.gotimerbyjs.VerticalTextView>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/setButton_screen"
+        app:layout_constraintTop_toTopOf="@+id/screen_timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/screen_timer">
+
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:text="Set"
+            android:textColor="@color/white"
+            android:background="@color/background_black"
+            android:textSize="@dimen/button_text_size"/>
+
+        <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:src="@drawable/pause_button_vector"
+            android:background="@color/background_black"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:visibility="invisible"
+             />
+
+        <Button
+            android:id="@+id/webView_link_button"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:text="koa"
+            android:textColor="@color/white"
+            android:background="@color/background_black"
+            android:textSize="@dimen/button_text_size"/>
+
+        <TextView
+            android:id="@+id/reset_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:clickable="false"
+            android:layout_height="match_parent"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setButton_screen">
+
+
+        <LinearLayout
+            android:id="@+id/player2_screen"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:background="@color/background_gray91">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/player_cho_read"
+                android:textSize="@dimen/plyer_screen_textSize"
+                android:id="@+id/p2_cho_read"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:gravity="top|center_horizontal"
+            android:text="0:10:00"
+            android:textSize="@dimen/plyer_screen_timerSize"
+            android:id="@+id/p2_timer"/>
+        </LinearLayout>
+
+
+        <com.gnuda.gotimerbyjs.VerticalTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/total_soo"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:paddingTop="@dimen/side_text_margin_top"
+            android:text="@string/total_soo"
+            android:textSize="@dimen/side_text_size"
+            android:textAllCaps="true"
+            android:background="@color/white">
+
+        </com.gnuda.gotimerbyjs.VerticalTextView>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
